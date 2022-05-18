@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+        <script> 
+                var a = parseInt(prompt("Напишіть число!"));
+                if (a == 10){
+                    alert("Вірно");
+                }
+                else {
+                    alert("Не вірно");
+                }
+                var min = parseInt(prompt("Напишіть число  від 0 до 59"));
+                if (min >=0) {
+                    alert("Перша  чверть")
+                }else if (min>=15){
+                    alert("Друга чверть")
+                }
+                else if (min>=30){
+                    alert("Третя чверть")
+                }
+                else if (min>=59){
+                    alert("Четверта чверть")
+                }
+                var num = parseInt(prompt("Введіть число від 1 по 4 включно"));
+                var result= '';
+                if (num ==1) {
+                    result = 'зима';
+                }
+                else if(num==2){
+                    result='весна';
+                }
+                else if(num==3) {
+                    result='літо';
+                }
+                else {
+                    result ='осінь';
+                } 
+                alert(result);
+        </script> 
+</body>
+</html>

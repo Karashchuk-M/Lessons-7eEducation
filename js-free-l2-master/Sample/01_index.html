@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var num1 = parseInt(prompt("number"))  
+       
+        document.write(num1 + num1)
+        */
+
+        /*
+        var userNum = parseInt(prompt("Напишіть число!"));
+        var num1 = 2;
+        var num3;
+ 
+        if(num1 > userNum){
+            document.write("задумане число не входить в числовий ряд!")
+        }else if(num1 == userNum){
+            document.write("задумане число входить в числовий ряд")
+        }else{
+            num3 = num1;
+            num1 = num1 + userNum;
+            userNum = num3;
+        }
+ 
+        document.write("<br>end");
+        var counter = 0;
+ 
+        while(counter < 10){
+            document.write("counter = " + counter + "<br>");
+            counter = counter + 1;
+        }
+        
+        */
+
+        var userNum = parseInt(prompt("Напишіть число!"));
+        var num1 = 2;
+        var num3;
+        var flug = true;
+
+        while (flug) {
+            if (num1 > userNum) {
+                document.write("задумане число не входить в числовий ряд!");
+                flug = false;
+            } else if (num1 == userNum) {
+                document.write("задумане число входить в числовий ряд")
+                flug = false;
+            } else {
+                num3 = num1;
+                num1 = num1 + userNum;
+                userNum = num3;
+                console.log("else")
+                flug = true;
+            }    
+        }
+
+        document.write("<br>end");
+    </script>
+</body>
+
+</html>
