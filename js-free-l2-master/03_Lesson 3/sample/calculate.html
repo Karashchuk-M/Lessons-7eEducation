@@ -8,19 +8,22 @@
 </head>
 <body>
     <script>
-        var num1 = 3;
-        var num2 = 5;
-        var sign = "+"
+        var num1 = parseInt(prompt("Введіть перше число"));
+        var num2 = parseInt(prompt("Введіть друге число"));
+        var sign = prompt("Введіть знак плюс, мінус, множення або ділення");
 
         function calc (a, b, c) {
-             if(c == "+"){
-                 document.write(a + b)
-             }else if(c == "-"){
-                 document.write(a - b)
-             }
+            if(c == "+"){
+                console.log(a + b);
+            }else if(c == "-"){
+                console.log(a - b);
+            }else if(c == "*"){
+                console.log(a * b);
+            }else if(c == "/"){
+                console.log(a / b);
+            }
         }
-
-        calc(num1, num2, sign)
+        calc(num1, num2, sign);
     </script>
 </body>
 </html>
