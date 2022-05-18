@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstName = prompt("Ваше  ім'я?");
+        let secondName  = prompt("Ваше  прізвище?");
+        let age = prompt("Скільки вам років?");
+        let date = firstName + " " + secondName + " " +age;
+        let a =  parseInt(prompt("Введіть перше ціле число"));
+        let b =  parseInt(prompt("Введіть друге ціле число"));
+        let c =  parseInt(prompt("Введіть третє ціле число"));
+        let result = (a+b+c)/3;
+        document.write("<div style='width:806px; height:812px; border: 1px solid black'>")
+            document.write("<div style='width:800px; height:200px; border: 3px solid red'>")
+                document.write(date); 
+            document.write("</div>")
+            document.write("<div style='width:806px; height:406px'>")
+                document.write("<div style='width:100px;  float: left;  clear:none; height:400px; border: 3px solid orange'>")
+
+                document.write("</div>")
+                document.write("<div style='width:693px; float: right; height:400px; border: 3px solid orange'>")
+                    document.write(result); 
+                document.write("</div>")
+            document.write("</div>")
+            document.write("<div style='width:800px; height:200px; border: 2px solid grey'>")
+            document.write("</div>")
+        document.write("</div>")
+    </script>
+</body>
+</html>
